@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <!-- This is a SEO change-->
     <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"  class=hiden>
 <url>
     <loc>http://161.35.116.165/pb/</loc>
     <lastmod>9-21-2020</lastmod>
@@ -27,7 +27,8 @@
 <body>
     <!-- This is a semantic HTML Change-->
 <nav>
-    <div class="menu">
+    <!-- This is an A11y Change-->
+    <div class="menu" aria-label="navigation menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -36,8 +37,8 @@
         </ul>
     </div>
 </nav>
-
-    <div class="hero">
+<!-- This is an A11y Change-->
+    <div class="hero" aria-labelledby="Personal Budget">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
     </div>
