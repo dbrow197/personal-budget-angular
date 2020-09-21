@@ -1,0 +1,16 @@
+ <!-- This is a SEO change-->
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"  class=hiden>
+<url>
+    <loc>http://161.35.116.165/pb/</loc>
+    <lastmod>9-21-2020</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>http://161.35.116.165/pb/about.html</loc>
+    <lastmod>9-21-2020</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+</url>
+    </urlset>
