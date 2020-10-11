@@ -1,18 +1,48 @@
 const express = require('express');
+//const cors = require('cors');
 const app = express();
 const port = 3000;
 
-
-
+//app.use(cors());
 app.use('/', express.static('public'));
 
+const budget = {
 
-//var fs = require('fs');
-//var obj = JSON.parse(fs.readFileSync('/newBudget', 'utf8'));
+    myBudget: [
+   {
+        title: "Eat out",
+        budget: 100
+    },
+    {
+        title: "Rent",
+        budget: 1200
+    },
+    {
+        title: "Groceries",
+        budget: 250
+    },
+    {
+        title: "Phone",
+        budget: 89
+    },
+    {
+        title: "Car",
+        budget: 400
+    },
+    {
+        title: "Gym",
+        budget: 35
+    },
+    {
+        title: "DigitalOcean",
+        budget: 4
+    },
+    ]
+};
 
-app.get('/hello', (req, res) =>{
-   res.send('Hello World!');
-});
+//app.get('/hello', (req, res) =>{
+//   res.send('Hello World!');
+//});
 
 const data = require('./newBudget.json');
 
@@ -22,11 +52,11 @@ app.get('/budget', function (req, res) {
 })
 
 app.get('/budget', (req, res) => {
-    res.json(myBudget);
+    res.json(budget);
 });
-
+//possible myBudget
 
 app.listen(port, () => {
-    console.log(`Example app listening at https://localhost:${port}`);
+    console.log(`API served at https://localhost:${port}`);
 });
 

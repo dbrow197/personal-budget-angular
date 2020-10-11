@@ -134,6 +134,7 @@
         var dataSource = {
             datasets: [
                 {
+                    //100, 1200, 250, 89, 400, 35, 4
                     data: [100, 1200, 250, 89, 400, 35, 4],
                     backgroundColor: [
                         '#ffcd56',
@@ -170,6 +171,7 @@ function getBudget() {
     axios.get('/budget')
     .then(function (res) {
         console.log(res.data);
+        //res.data.budget.length
         for (var i = 0; i < res.data.budget.length; i++) {
             dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
             dataSource.labels[i] = res.data.myBudget[i].title;
