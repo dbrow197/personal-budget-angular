@@ -135,7 +135,7 @@
             datasets: [
                 {
                     //100, 1200, 250, 89, 400, 35, 4
-                    data: [100, 1200, 250, 89, 400, 35, 4],
+                    data: [],
                     backgroundColor: [
                         '#ffcd56',
                         '#ff6384',
@@ -149,13 +149,7 @@
             }
         ],
         labels: [
-            'Eat out',
-            'Rent',
-            'Groceries',
-            'Phone',
-            'Car',
-            'Gym',
-            'DigitalOcean'
+            
         ]
     };
 
@@ -172,10 +166,15 @@ function getBudget() {
     .then(function (res) {
         console.log(res.data);
         //res.data.budget.length
-        for (var i = 0; i < res.data.budget.length; i++) {
+         for (var i = 0; i < res.data.myBudget.length; i++) {
             dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
             dataSource.labels[i] = res.data.myBudget[i].title;
         }
+        //   for (var i = 0; i < res.data.myBudget.length; i++) {
+        //     dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
+        //     dataSource.labels[i] = res.data.myBudget[i].title;
+        // }
+         
         createChart();
     });
 }
