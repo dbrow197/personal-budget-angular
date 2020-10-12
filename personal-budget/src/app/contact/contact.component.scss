@@ -1,19 +1,19 @@
-div.breadcrumbs {
+div.contact {
   width: 100%;
   background-color: #4d5791;
   height: 44px;
   padding: 0 40px;
 }
 
-div.breadcrumbs ul,
-div.breadcrumbs ul li {
+div.contact ul,
+div.contact ul li {
   margin: 0;
   padding: 0 ;
   list-style: none;
   display: inline-block;
 }
 
-div.breadcrumbs ul li a {
+div.contact ul li a {
   display: block;
   padding: 0 20px;
   line-height: 44px;
@@ -23,7 +23,7 @@ div.breadcrumbs ul li a {
   margin: 0;
 }
 
-div.breadcrumbs ul li a:hover  {
+div.contact ul li a:hover  {
   background-color: white;
   color: #4d5791;
 }

@@ -3,6 +3,7 @@ import { Chart } from 'chart.js';
 import { HttpClient } from '@angular/common/http';
 
 
+
 @Component({
   selector: 'pb-homepage',
   templateUrl: './homepage.component.html',
@@ -45,8 +46,8 @@ export class HomepageComponent implements OnInit {
 
 
    createChart() {
-    const ctx: any = document.getElementById('myChart');
-    const myPieChart = new Chart(ctx, {
+    var ctx = document.getElementById('myChart');
+    var myPieChart = new Chart(ctx, {
         type: 'pie',
         data: this.dataSource
       });
